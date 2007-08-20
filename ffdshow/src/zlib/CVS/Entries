@@ -1,0 +1,23 @@
+/README/1.1/Sun Feb  5 01:20:08 2006//
+/adler32.c/1.1/Sun Feb  5 01:20:08 2006//
+/compress.c/1.1/Sun Feb  5 01:20:08 2006//
+/crc32.c/1.1/Sun Feb  5 01:20:08 2006//
+/crc32.h/1.1/Sun Feb  5 01:20:08 2006//
+/deflate.c/1.1/Sun Feb  5 01:20:08 2006//
+/deflate.h/1.1/Sun Feb  5 01:20:08 2006//
+/infback.c/1.1/Sun Feb  5 01:20:08 2006//
+/inffast.c/1.1/Sun Feb  5 01:20:08 2006//
+/inffast.h/1.1/Sun Feb  5 01:20:08 2006//
+/inffixed.h/1.1/Sun Feb  5 01:20:08 2006//
+/inflate.c/1.1/Sun Feb  5 01:20:08 2006//
+/inflate.h/1.1/Sun Feb  5 01:20:08 2006//
+/inftrees.c/1.1/Sun Feb  5 01:20:08 2006//
+/inftrees.h/1.1/Sun Feb  5 01:20:08 2006//
+/trees.c/1.1/Sun Feb  5 01:20:09 2006//
+/trees.h/1.1/Sun Feb  5 01:20:09 2006//
+/uncompr.c/1.1/Sun Feb  5 01:20:09 2006//
+/zconf.h/1.1/Sun Feb  5 01:20:09 2006//
+/zlib.h/1.1/Sun Feb  5 01:20:09 2006//
+/zutil.c/1.1/Sun Feb  5 01:20:09 2006//
+/zutil.h/1.1/Sun Feb  5 01:20:09 2006//
+D
