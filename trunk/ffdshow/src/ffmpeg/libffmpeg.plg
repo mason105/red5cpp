@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: libffmpeg - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\admin\LOCALS~1\Temp\RSP367.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "./" /I "../../include" /I "./libavcodec" /I "./libavformat" /I "./libavutil" /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "EMULATE_INTTYPES" /D "HAVE_AV_CONFIG_H" /Fp"Debug/libffmpeg.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\XMediaPlatform\Code\LIBRARY\FFMPEG\libavcodec\resample.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\admin\LOCALS~1\Temp\RSP367.tmp" 
+<h3>Output Window</h3>
+Compiling...
+resample.c
+d:\xmediaplatform\code\library\ffmpeg\libavutil\common.h(11) : warning C4005: 'HAVE_AV_CONFIG_H' : macro redefinition
+        unknown(0) : see previous definition of 'HAVE_AV_CONFIG_H'
+d:\xmediaplatform\code\library\ffmpeg\libavutil\rational.h(47) : warning C4244: 'return' : conversion from '__int64 ' to 'int ', possible loss of data
+
+
+
+<h3>Results</h3>
+resample.obj - 0 error(s), 2 warning(s)
+</pre>
+</body>
+</html>
