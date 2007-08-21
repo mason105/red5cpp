@@ -1,0 +1,697 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\XDigitalLifeServerApp.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\XDigitalLifeServerApp.ico"
+IDR_XDIGITTYPE          ICON                    "res\\XDigitalLifeServerAppDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_XDL_BOTTOMLEFT      BITMAP                  "res\\IDB_XDL_BOTTOMLEFT.bmp"
+IDB_XDL_BOTTOMRIGHT     BITMAP                  "res\\IDB_XDL_BOTTOMRIGHT.bmp"
+IDB_XDL_CAPTION         BITMAP                  "res\\IDB_XDL_CAPTION.bmp"
+IDB_XDL_CLOSE_NORMAL    BITMAP                  "res\\IDB_XDL_CLOSE_NORMAL.bmp"
+IDB_XDL_CLOSE_PUSHED    BITMAP                  "res\\IDB_XDL_CLOSE_PUSHED.bmp"
+IDB_XDL_MAXIMIZE_NORMAL BITMAP                  "res\\IDB_XDL_MAXIMIZE_NORMAL.bmp"
+IDB_XDL_MAXIMIZE_PUSHED BITMAP                  "res\\IDB_XDL_MAXIMIZE_PUSHED.bmp"
+IDB_XDL_MENU_NORMAL     BITMAP                  "res\\IDB_XDL_MENU_NORMAL.bmp"
+IDB_XDL_MINIMIZE_NORMAL BITMAP                  "res\\IDB_XDL_MINIMIZE_NORMAL.bmp"
+IDB_XDL_MINIMIZE_PUSHED BITMAP                  "res\\IDB_XDL_MINIMIZE_PUSHED.bmp"
+IDR_TREE_ICONS          BITMAP                  "res\\TreeIcons.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_RUN
+    BUTTON      ID_STOP
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "保存(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",               ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&P)...\tCtrl+P",         ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件",                    ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",            ID_EDIT_PASTE
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 XDigitalLifeServerApp(&A)...", ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 XDigitalLifeServerApp"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "XDigitalLifeServerApp 1.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2006",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "FileDescription", "FLV Win32 Server Microsoft"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "FLV Win32 Server"
+            VALUE "LegalCopyright", "版权所有 (C) 2006"
+            VALUE "OriginalFilename", "FLV Win32 Server.EXE"
+            VALUE "ProductName", "FLV Win32 Server 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// IMAGE
+//
+
+IDR_BACKGROUND          IMAGE                   "res\\BackGround.jpg"
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_MSG DIALOG  0, 0, 187, 87
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Message"
+FONT 10, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,33,66,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,102,66,50,14
+END
+
+IDD_DIALOG_CONNECTION DIALOG  0, 0, 187, 98
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+END
+
+IDD_DIALOG_LOG DIALOG  0, 0, 187, 98
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_DIALOG_PUBLISHPOINT DIALOG  0, 0, 187, 98
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+END
+
+IDD_DIALOG_RELAY DIALOG  0, 0, 187, 98
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+END
+
+IDD_DIALOG_SETTING DIALOG  0, 0, 187, 98
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 10, "MS Serif"
+BEGIN
+END
+
+IDD_DIALOG_SETTING_Web DIALOG  0, 0, 206, 98
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 10, "MS Serif"
+BEGIN
+    LTEXT           "Port:",IDC_STATIC,7,7,21,8
+    EDITTEXT        IDC_EDIT_WebPORT,69,7,42,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "MaxOutputBitrate:",IDC_STATIC,7,26,52,8
+    LTEXT           "MaxRelays:",IDC_STATIC,7,45,52,8
+    EDITTEXT        IDC_EDIT_WebMAXOUTPUTBITRATE,69,25,42,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_WebMAXRELAYS,69,43,42,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+END
+
+IDD_DIALOG_SETTING_VOD DIALOG  0, 0, 206, 98
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 10, "MS Serif"
+BEGIN
+    LTEXT           "Port:",IDC_STATIC,7,7,21,8
+    EDITTEXT        IDC_EDIT_VODPORT,51,7,42,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Address:",IDC_STATIC,7,27,33,8
+    EDITTEXT        IDC_EDIT_VODADDRESS,51,26,85,12,ES_AUTOHSCROLL
+    LTEXT           "File Path:",IDC_STATIC,7,47,41,8
+    EDITTEXT        IDC_EDIT_VODFILEPATH,51,45,127,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_BROWSH,180,44,19,14
+END
+
+IDD_DIALOG_VODFILES DIALOG  0, 0, 187, 98
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+END
+
+IDD_PROPPAGE1 DIALOG  0, 0, 195, 94
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "New Relay Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Name:",IDC_STATIC,7,16,21,8
+    EDITTEXT        IDC_EDIT_NAME,36,16,57,14,ES_AUTOHSCROLL
+    LTEXT           "Input:",IDC_STATIC,7,42,25,8
+    COMBOBOX        IDC_COMBO_INPUT,36,40,157,35,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Type:",IDC_STATIC,7,70,21,8
+    COMBOBOX        IDC_COMBO_TYPE,36,67,63,56,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PROPPAGE2 DIALOG  0, 0, 267, 128
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "New Relay Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Output Option",IDC_STATIC,0,2,264,116
+    LTEXT           "MuxMethod:",IDC_STATIC,7,39,41,8
+    COMBOBOX        IDC_COMBO_ENCAPSULATIONMETHOD,61,36,56,97,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Address:",IDC_STATIC,7,56,33,8
+    EDITTEXT        IDC_EDIT_NETADDRESS,61,52,123,14,ES_AUTOHSCROLL
+    LTEXT           "Port:",IDC_STATIC,197,58,21,8
+    EDITTEXT        IDC_EDIT_NETPORT,219,52,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "NetProtocol:",IDC_STATIC,7,23,49,8
+    COMBOBOX        IDC_COMBO_NETPROTOCOL,61,20,54,81,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Miface-addr:",IDC_STATIC,7,71,49,8
+    LTEXT           "RTSP Port:",IDC_STATIC,9,90,41,8
+    EDITTEXT        IDC_EDIT_NETRTSPPORT,61,87,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    COMBOBOX        IDC_EDIT_MIFACEADDRESS,61,69,123,72,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PROPPAGE3 DIALOG  0, 0, 267, 128
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "New Relay Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Description:",IDC_STATIC,4,7,49,8
+    LTEXT           "Bitrate (kb/s):",IDC_STATIC,3,23,61,8
+    LTEXT           "Type:",IDC_STATIC,3,38,21,8
+    LTEXT           "ID:",IDC_STATIC,2,56,13,8
+    EDITTEXT        IDC_EDIT_DESCRIPTION,77,7,172,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BITRATE,77,21,56,14,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_COMBO_WebSOURCETYPE,77,36,55,55,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_WebRELAYID,77,52,173,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_MSG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_DIALOG_CONNECTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_DIALOG_LOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_DIALOG_PUBLISHPOINT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_DIALOG_RELAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_DIALOG_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_DIALOG_SETTING_Web, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_DIALOG_SETTING_VOD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_DIALOG_VODFILES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_PROPPAGE1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_PROPPAGE2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_PROPPAGE3, DIALOG
+    BEGIN
+        RIGHTMARGIN, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PROPPAGE1 DLGINIT
+BEGIN
+    IDC_COMBO_TYPE, 0x403, 10, 0
+0x7242, 0x616f, 0x6364, 0x7361, 0x0074, 
+    IDC_COMBO_TYPE, 0x403, 4, 0
+0x3250, 0x0050, 
+    0
+END
+
+IDD_PROPPAGE3 DLGINIT
+BEGIN
+    IDC_COMBO_WebSOURCETYPE, 0x403, 8, 0
+0x6e55, 0x6e6b, 0x776f, 0x006e, 
+    IDC_COMBO_WebSOURCETYPE, 0x403, 3, 0
+0x5354, "\000" 
+    IDC_COMBO_WebSOURCETYPE, 0x403, 4, 0
+0x4d57, 0x0056, 
+    IDC_COMBO_WebSOURCETYPE, 0x403, 4, 0
+0x504d, 0x0033, 
+    IDC_COMBO_WebSOURCETYPE, 0x403, 4, 0
+0x474f, 0x0047, 
+    IDC_COMBO_WebSOURCETYPE, 0x403, 4, 0
+0x4152, 0x0057, 
+    IDC_COMBO_WebSOURCETYPE, 0x403, 1, 0
+"\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "GOD FLV Server\n\nXDigit\n\nOD FLV Server.DocumentOD FLV Server"
+    IDS_FILEVERSION         "1.0.0.0"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "GOD FLV Server"
+    AFX_IDS_IDLEMESSAGE     "??"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "???"
+    ID_INDICATOR_CAPS       "??"
+    ID_INDICATOR_NUM        "??"
+    ID_INDICATOR_SCRL       "??"
+    ID_INDICATOR_OVR        "??"
+    ID_INDICATOR_REC        "??"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "?????\n??"
+    ID_FILE_OPEN            "????????\n??"
+    ID_FILE_CLOSE           "??????\n??"
+    ID_FILE_SAVE            "??????\n??"
+    ID_FILE_SAVE_AS         "??????????????\n???"
+    ID_FILE_PAGE_SETUP      "??????\n????"
+    ID_FILE_PRINT_SETUP     "??????????\n????"
+    ID_FILE_PRINT           "??????\n??"
+    ID_FILE_PRINT_PREVIEW   "????\n????"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "??????,??????\n??"
+    ID_APP_EXIT             "??????;??????\n??"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "?????"
+    ID_FILE_MRU_FILE2       "?????"
+    ID_FILE_MRU_FILE3       "?????"
+    ID_FILE_MRU_FILE4       "?????"
+    ID_FILE_MRU_FILE5       "?????"
+    ID_FILE_MRU_FILE6       "?????"
+    ID_FILE_MRU_FILE7       "?????"
+    ID_FILE_MRU_FILE8       "?????"
+    ID_FILE_MRU_FILE9       "?????"
+    ID_FILE_MRU_FILE10      "?????"
+    ID_FILE_MRU_FILE11      "?????"
+    ID_FILE_MRU_FILE12      "?????"
+    ID_FILE_MRU_FILE13      "?????"
+    ID_FILE_MRU_FILE14      "?????"
+    ID_FILE_MRU_FILE15      "?????"
+    ID_FILE_MRU_FILE16      "?????"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "????????\n????"
+    ID_PREV_PANE            "????????\n????"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "???????????\n??"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "??????\n??"
+    ID_EDIT_CLEAR_ALL       "????\n????"
+    ID_EDIT_COPY            "???????????????\n??"
+    ID_EDIT_CUT             "???????????????\n??"
+    ID_EDIT_FIND            "???????\n??"
+    ID_EDIT_PASTE           "???????\n??"
+    ID_EDIT_REPEAT          "???????\n??"
+    ID_EDIT_REPLACE         "?????????????\n??"
+    ID_EDIT_SELECT_ALL      "??????\n????"
+    ID_EDIT_UNDO            "????????\n??"
+    ID_EDIT_REDO            "????????????\n????"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "????????\n?????"
+    ID_VIEW_STATUS_BAR      "????????\n?????"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "??????"
+    AFX_IDS_SCMOVE          "??????"
+    AFX_IDS_SCMINIMIZE      "????????"
+    AFX_IDS_SCMAXIMIZE      "??????????"
+    AFX_IDS_SCNEXTWINDOW    "??????????"
+    AFX_IDS_SCPREVWINDOW    "??????????"
+    AFX_IDS_SCCLOSE         "????????????????"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "??????????"
+    AFX_IDS_SCTASKLIST      "?????"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "????????\n????"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VODSERVER           "VOD Setting"
+    IDS_WebSERVER           "Web Setting"
+    IDS_SECURITY            "Security"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PROPSHT_CAPTION     "Wizard"
+END
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\XDigitalLifeServerApp.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
